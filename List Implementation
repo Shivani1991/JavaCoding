@@ -25,19 +25,19 @@ class listStructure {
     Vector <ChangeStructure> arr = new Vector<ChangeStructure>(this.capacity);
     
     void addElement(ChangeStructure obj){
-        if(arr.size() < this.capacity){
-            arr.add(obj);
+        if(this.arr.size() < this.capacity){
+            this.arr.add(obj);
         }
     }
     
     void deleteElement(ChangeStructure obj){
-        if(arr.size() != 0){
-            arr.removeElement(obj);
+        if(this.arr.size() != 0){
+            this.arr.removeElement(obj);
         }
     }
     
     ChangeStructure retriveElement(int index){
-        return arr.get(index);
+        return this.arr.get(index);
     }
 }
 
